@@ -63,7 +63,7 @@ const calculator = (type, value, state) => {
       return {
         operator: value,
         previousValue: state.currentValue,
-        currentValue: "0"
+        currentValue: 0
       };
     case "equal":
       return handleEqual(state);

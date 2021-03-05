@@ -21,7 +21,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar barStyle="light-content" backgroundColor="#242424" />
+        <StatusBar barStyle="light-content" backgroundColor={Color.barColor} />
         <SafeAreaView>
           <Text style={styles.value}>
             {parseFloat(this.state.currentValue).toLocaleString()}
@@ -104,11 +104,11 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#202020',
+    backgroundColor: Color.container,
     justifyContent: 'flex-end',
   },
   value: {
-    color: '#fff',
+    color: Color.text,
     fontSize: 40,
     textAlign: 'right',
     marginRight: 20,
