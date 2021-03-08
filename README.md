@@ -10,9 +10,9 @@ yarn install  or npm install
 Running
 
 "Yarn" 
-yarn run ios
+yarn run ios / 
 yarn run android 
 
 "Npm"
-npm run ios 
+npm run ios / 
 npm run android
